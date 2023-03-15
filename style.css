@@ -118,7 +118,9 @@ body {
 }
 .presentacion .div1 p {
   margin: 15px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
 }
 .presentacion .div1 h1 {
   font-family: "Monofett", cursive;
@@ -138,6 +140,50 @@ body {
 }
 .presentacion .div2 img {
   margin: 20px 20px;
+}
+.section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: center;
+  height: 1200px;
+}
+.section article {
+  width: 50%;
+  margin: 20px 25px;
+}
+.section article img {
+  height: 500px;
+  width: auto;
+  margin: 20px 0px;
+}
+.section article h5 {
+  margin: 20px 20px;
+}
+.section article span {
+  font-weight: 100;
+}
+.section article ul {
+  text-decoration: none;
+  list-style: none;
+}
+.section article li {
+  margin: 10px 0px;
+}
+.iconos2 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 15px;
+}
+.iconos2 img {
+  width: 70px;
+  height: auto;
+  transition: all 0.3s;
+}
+.iconos2 img:hover {
+  transform: scale(1.4);
 }
 
 @media screen and (max-width: 900px) {
