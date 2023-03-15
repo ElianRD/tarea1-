@@ -115,7 +115,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex: 50%;
 }
 .presentacion .div1 p {
   margin: 15px;
@@ -126,22 +125,31 @@ body {
   color: rgb(0, 0, 0);
   font-size: 40px;
 }
+.presentacion .div1 h1:hover {
+  transform: scale(1.2);
+  color: rgb(68, 68, 68);
+}
+
 .presentacion .div2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 50%;
+  margin: 20px 0px;
 }
 .presentacion .div2 img {
-  height: 600px;
-  width: auto;
+  margin: 20px 20px;
 }
+
 @media screen and (max-width: 900px) {
   .presentacion {
     flex-wrap: wrap;
+    height: 100%;
   }
-  .presentacion .div2 img {
-    height: 500px;
+  .presentacion .div2 {
+    margin: 20px 10px;
+  }
+  .presentacion .div1 h1:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -164,8 +172,7 @@ body {
   .cierre {
     display: flex;
   }
-  .presentacion {
-    height: 95vh;
-    flex-wrap: wrap;
+  .presentacion .div2 img {
+    width: 100%;
   }
 }
