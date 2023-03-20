@@ -9,16 +9,16 @@ body {
 }
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 5px 10px;
-  height: 70px;
+  height: 80px;
   background-color: white;
   box-shadow: 0 2px 5px rgb(0, 0, 0, 0.5);
 }
 
 .header .logo img {
-  height: 80px;
+  height: 70px;
   width: auto;
   transition: all 0.3s;
 }
@@ -101,6 +101,10 @@ body {
   border-radius: 5px;
   color: rgb(0, 120, 200);
 }
+
+/* navvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+/* navvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+/* navvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
 .presentacion {
   display: flex;
   flex-direction: row;
@@ -126,6 +130,7 @@ body {
   font-family: "Monofett", cursive;
   color: rgb(0, 0, 0);
   font-size: 40px;
+  transition: all 0.3s;
 }
 .presentacion .div1 h1:hover {
   transform: scale(1.2);
@@ -140,16 +145,21 @@ body {
 }
 .presentacion .div2 img {
   margin: 20px 20px;
+  transition: all 0.3s;
 }
+.presentacion .div2 img:hover {
+  transform: scale(1.2);
+}
+/* .presentacion */
+/* .presentacion */
+/* .presentacion */
 .section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
   text-align: center;
-  height: 1200px;
 }
 .section article {
-  width: 50%;
   margin: 20px 25px;
 }
 .section article img {
@@ -171,11 +181,7 @@ body {
   margin: 10px 0px;
 }
 .iconos2 {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 50px 15px;
+  display: none;
 }
 .iconos2 img {
   width: 70px;
@@ -184,6 +190,34 @@ body {
 }
 .iconos2 img:hover {
   transform: scale(1.4);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+}
+footer .text {
+  margin: 15px;
+}
+footer .text li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+footer .text a {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+footer .text p {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 @media screen and (max-width: 900px) {
@@ -196,6 +230,10 @@ body {
   }
   .presentacion .div1 h1:hover {
     transform: scale(1.1);
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -218,7 +256,45 @@ body {
   .cierre {
     display: flex;
   }
+
+  .presentacion .div2 img:hover {
+    transform: scale(1.1);
+  }
+  .section article {
+    margin: 20px 0px;
+  }
+
+  .iconos2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
   .presentacion .div2 img {
-    width: 100%;
+    width: 400px;
+    height: auto;
+  }
+  .presentacion .div2 img:hover {
+    transform: scale(1.2);
+  }
+  .iconos2 img {
+    width: 40px;
+    height: auto;
+    transition: all 0.3s;
+  }
+}
+@media screen and (max-width: 400px) {
+  .presentacion .div2 img {
+    width: 200px;
+    height: auto;
+  }
+  .presentacion .div2 img:hover {
+    transform: scale(1.2);
+  }
+  .section article img {
+    height: 300px;
+    width: auto;
+    margin: 20px 0px;
   }
 }
